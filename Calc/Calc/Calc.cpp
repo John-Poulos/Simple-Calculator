@@ -11,10 +11,12 @@ int main()
 	std::cin >> n1;
 	std::cout << "Select operation type: (+,-,*,/,%,^,s) ";
 	std::cin >> ops;
-
-	std::cout << "Enter second number: ";
-	std::cin >> n2;
-
+	if (ops != 's') {
+		std::cout << "Enter second number: ";
+		std::cin >> n2;
+	}
+	else
+		std::cout << std::endl;
 	
 
 	switch(char(ops)) 
